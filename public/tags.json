@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bc0a2e60-c5a6-41e9-9243-776219f214c5",
+    "name": "DeFi"
+  },
+  {
+    "id": "34e7fc08-3e1e-4a24-9d4f-5b5f0a685836",
+    "name": "Gaming"
+  },
+  {
+    "id": "8b86a4aa-7bdf-4f6e-9ad3-bb57b944d1cb",
+    "name": "DEX"
+  },
+  {
+    "id": "14f5d2cb-9588-4c3b-b1ee-1ccbc9a8fd83",
+    "name": "NFT"
+  },
+  {
+    "id": "6c25fd7e-51bb-49ac-b90a-7dd0ecce1a1c",
+    "name": "Stablecoin"
+  },
+  {
+    "id": "cc0ec290-18bb-4a6e-84a0-5b4c158c9c37",
+    "name": "Yield Farming"
+  },
+  {
+    "id": "9649a5b5-4a0c-4cd0-a607-4c9b2969b04c",
+    "name": "Layer 1"
+  },
+  {
+    "id": "7f2f3423-52cf-4688-9b85-b10f04be5d5b",
+    "name": "AI"
+  },
+  {
+    "id": "e27cb21b-e8ce-4bb5-a1b7-2fe90ffb0b4f",
+    "name": "Oracles"
+  },
+  {
+    "id": "67a14ee9-dc42-4e9a-94fa-17b20734bc8f",
+    "name": "Privacy"
+  }
+]

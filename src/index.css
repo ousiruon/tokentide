@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-bg-light: #ffffff;
+  --color-text-light: #494a49;
+  --color-tertiary-light: #f6f4ea;
+  --color-secondary-light: #a09e98;
+  --color-bg-dark: #1b263b;
+  --color-text-dark: #e0e1dd;
+  --color-tertiary-dark: #778da9;
+  --color-secondary-dark: #0d1b2a;
+  --color-up-color: #16c784;
+  --color-down-color: #ea3943;
+  --font-display: "Roboto", sans-serif;
+  --font-logo: "Arizonia", cursive;
+}
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

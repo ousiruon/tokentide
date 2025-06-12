@@ -183,7 +183,7 @@ const ExchangeShow = () => {
                     </div>
                     <a
                       href={singleExchange.register_link}
-                      className="py-2 sm:px-4 bg-tertiary-light/60 dark:bg-tertiary-dark/60 hover:bg-tertiary-light hover:dark:bg-tertiary-dark transition-all duration-300 ease-in rounded cursor-pointer font-semibold"
+                      className="py-2 px-4 bg-tertiary-light/60 dark:bg-tertiary-dark/60 hover:bg-tertiary-light hover:dark:bg-tertiary-dark transition-all duration-300 ease-in rounded cursor-pointer font-semibold"
                     >
                       Register Now
                     </a>

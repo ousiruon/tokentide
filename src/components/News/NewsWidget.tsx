@@ -48,7 +48,7 @@ const NewsWidget = () => {
                 </div>
                 <div className="font-semibold">
                   <div className="text-xs md:text-sm opacity-70">{newItem.date}</div>
-                  <div className="text-sm md:text-base relative w-fit ">{newItem.title}</div>
+                  <div className="text-sm md:text-base relative w-fit">{newItem.title}</div>
                 </div>
               </NavLink>
             ))}

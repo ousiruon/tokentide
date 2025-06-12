@@ -20,7 +20,7 @@ const ItemName = ({
               loading="lazy"
             />
             {name}
-            <div className="font-normal text-xs">{symbol}</div>
+            <div className="hidden sm:block font-normal text-xs">{symbol}</div>
           </div>
         </div>
       </td>

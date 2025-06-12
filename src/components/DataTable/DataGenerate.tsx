@@ -204,7 +204,7 @@ const DataGenerate = ({ data }: { data: Cryptocurrency[] }) => {
               )}
               <OptionsTopBar data={sortedData} />
             </div>
-            <div className="overflow-x-auto no-scrollbar relative">
+            <div id="dataTable" className="overflow-x-auto no-scrollbar relative">
               <table className="table-auto w-full border-collapse border-spacing-0 h-full">
                 <DataHeader />
                 <DataBody data={finalData} />

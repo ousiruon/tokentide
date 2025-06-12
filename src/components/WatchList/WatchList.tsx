@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import type { AppDispatch, RootState } from "../../store/store";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import type { Cryptocurrency } from "../../utilities/data";
 import DataGenerate from "../DataTable/DataGenerate";
 import { MdEdit } from "react-icons/md";
 import { IoMdCheckmark } from "react-icons/io";
 import { setListName } from "../../store/Slices/watchListData";
+import { FaStar } from "react-icons/fa";
 
 const WatchList = () => {
   const { isLoggedIn } = useSelector((state: RootState) => state.login);
@@ -44,7 +45,11 @@ const WatchList = () => {
 
   return (
     <>
-      <div className="flex w-full min-h-dvh items-start justify-center bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark py-20">
+      <div
+        className={`flex w-full min-h-dvh ${
+          watchList.length === 0 ? "items-center" : "items-start"
+        }  justify-center bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark py-20`}
+      >
         {watchList.length > 0 && (
           <>
             <div className="relative flex flex-col gap-2 mx-auto w-full max-w-[1400px]">
@@ -93,6 +98,26 @@ const WatchList = () => {
               )}
             </div>
           </>
+        )}
+        {watchList.length === 0 && (
+          <div className="flex flex-col gap-6 bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark items-center justify-center w-[90%] mx-auto text-center">
+            <div className="bg-tertiary-light dark:bg-tertiary-dark p-6 rounded-full text-2xl">
+              <FaStar />
+            </div>
+            <div className="text-4xl font-semibold">
+              No items in your watchlist
+            </div>
+            <div className="text-lg opacity-70">
+              Begin tracking your favorite cryptocurrencies by tapping the
+              button below.
+            </div>
+            <NavLink
+              to="/latest-listings"
+              className="bg-tertiary-light dark:bg-tertiary-dark p-2 rounded cursor-pointer text-sm font-semibold opacity-70 hover:opacity-100 transition delay-150 duration-300 ease-in-out"
+            >
+              Cryptocoins
+            </NavLink>
+          </div>
         )}
       </div>
     </>

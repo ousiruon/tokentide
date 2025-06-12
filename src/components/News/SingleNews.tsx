@@ -21,12 +21,12 @@ const SingleNews = () => {
   }, [newsId, newsData]);
   return (
     <>
-      <div className="flex w-full min-h-dvh items-start justify-center bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark pt-20 pb-40">
-        <div className="w-[95%] max-w-[1400px] px-12">
+      <div className="flex w-full min-h-dvh items-start justify-center bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark pt-20 pb-20">
+        <div className="w-[95%] max-w-[1400px] px-6 lg:px-12">
           {article && (
-            <div className="flex flex-col gap-20 items-center justify-center">
-              <div className="flex flex-row w-full">
-                <div className="flex flex-col w-1/3 font-semibold gap-10 pr-20">
+            <div className="flex flex-col gap-6 lg:gap-20 items-center justify-center">
+              <div className="flex flex-col lg:flex-row w-full">
+                <div className="flex flex-col w-full lg:w-1/3 font-semibold gap-2 lg:gap-10 pb-5 lg:pb-0 pr-20">
                   <div className="flex flex-row gap-2 text-xs">
                     <div>{article.date}</div>
                     <div className="opacity-60">{article.reading_duration}</div>
@@ -36,7 +36,7 @@ const SingleNews = () => {
                     {article.subtitle}
                   </div>
                 </div>
-                <div className="flex relative w-2/3 pt-[45%] rounded-lg">
+                <div className="flex relative w-full lg:w-2/3 pt-[100%] md:pt-[45%] rounded-lg">
                   <img
                     className="absolute top-0 left-0 w-full h-full rounded-lg object-cover"
                     alt={`${article.title} image`}
@@ -44,8 +44,8 @@ const SingleNews = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-row gap-0 w-full">
-                <div className="flex flex-col w-4/6 gap-16">
+              <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 w-full">
+                <div className="flex flex-col w-full lg:w-4/6 gap-6 lg:gap-10">
                   {article.paragraphs.map((paragraph, index) => (
                     <div key={index} className="flex flex-col w-full gap-4">
                       {paragraph.title && (
@@ -61,8 +61,8 @@ const SingleNews = () => {
                     </div>
                   ))}
                 </div>
-                <div className="relative flex flex-col w-2/6 pl-8">
-                  <div className="sticky top-5 left-0 rounded-2xl flex flex-col gap-4 p-8 border-1">
+                <div className="relative flex flex-col w-full lg:w-2/6 lg:pl-8">
+                  <div className="sticky top-5 left-0 rounded-lg lg:rounded-2xl flex flex-col gap-4 p-8 border-1">
                     <div className="font-semibold">Subscribe to newsletter</div>
                     <div className="text-sm text-justify">
                       Subscribe to receive the latest blog posts to your inbox

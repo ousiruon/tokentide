@@ -81,6 +81,13 @@ const CurrentChart = ({
       },
       options: {
         responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 2, 
+        onResize: (chart: Chart, size) => {
+          if (size.width < 400) {
+            chart.options.aspectRatio = 1.5;
+          }
+        },
         plugins: {
           legend: {
             display: true,
